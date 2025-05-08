@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIN MULTAS - Prescripción de Multas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header / Encabezado -->
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="SIN MULTAS">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#formulario">Formulario</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de inicio -->
+    <section id="inicio">
+        <div class="banner">
+            <h1>¡Prescribe tus multas de tránsito de forma rápida y segura!</h1>
+            <p>Recibe tu cotización en minutos, solo necesitas cargar los detalles de tu multa.</p>
+            <a href="#formulario" class="cta">Comienza Ahora</a>
+        </div>
+    </section>
+
+    <!-- Sección Promocional -->
+    <section id="promocional">
+        <div class="contenido-promocional">
+            <h2>¿Por qué deberías contratar nuestro servicio?</h2>
+            <p>En **SIN MULTAS**, tramitamos la prescripción y pagos de multas automotrices. ¿Y quizás te preguntas cuál es el beneficio de este servicio?</p>
+            <ul>
+                <li><strong>Olvídate de los Juzgados:</strong> Nos encargamos de todo el proceso de regularización de tus multas. ¡Déjanoslo a nosotros!</li>
+                <li><strong>Ten la documentación en regla:</strong> Esto revaloriza tu vehículo y evita multas e intereses.</li>
+                <li><strong>¡Cotiza y AHORRA Tiempo y Dinero!</strong> Deja todo en nuestras manos y libérate de tus multas.</li>
+            </ul>
+            <a href="#formulario" class="cta">Cotiza AQUÍ</a>
+        </div>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section id="servicios">
+        <h2>¿Qué hacemos por ti?</h2>
+        <p>En **SIN MULTAS**, ofrecemos diversos servicios para ayudarte a regularizar tus multas y documentos relacionados con tu vehículo.</p>
+        
+        <div class="servicios-container">
+            <div class="servicio">
+                <img src="images/prescripcion.png" alt="Prescripción de multas">
+                <h3>Prescripción de Multas</h3>
+                <button class="info-btn" data-info="prescripcion">Más Info +</button>
+            </div>
+            <div class="servicio">
+                <img src="images/pago.png" alt="Pago de multas">
+                <h3>Pago de Multas</h3>
+                <button class="info-btn" data-info="pago">Más Info +</button>
+            </div>
+            <div class="servicio">
+                <img src="images/descuento.png" alt="Descuentos de multas">
+                <h3>Descuentos de Multas</h3>
+                <button class="info-btn" data-info="descuentos">Más Info +</button>
+            </div>
+            <div class="servicio">
+                <img src="images/clonacion.png" alt="Clonación de Patente">
+                <h3>Multas Clonación Patente</h3>
+                <button class="info-btn" data-info="clonacion">Más Info +</button>
+            </div>
+            <div class="servicio">
+                <img src="images/permiso.png" alt="Prescripción de Permiso de Circulación">
+                <h3>Prescripción Permiso de Circulación</h3>
+                <button class="info-btn" data-info="permiso">Más Info +</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de formulario -->
+    <section id="formulario">
+        <h2>Formulario de contacto</h2>
+        <p>Por favor, ingresa los datos solicitados para poder calcular tu cotización.</p>
+        <form id="contactForm">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="rut">RUT:</label>
+            <input type="text" id="rut" name="rut" required>
+
+            <label for="vehiculo">Tipo de Vehículo:</label>
+            <select id="vehiculo" name="vehiculo" required>
+                <option value="auto">Auto</option>
+                <option value="camion">Camión</option>
+                <option value="moto">Motocicleta</option>
+            </select>
+
+            <label for="infraccion">Tipo de Infracción:</label>
+            <input type="text" id="infraccion" name="infraccion" required>
+
+            <label for="documento">Cargar Multa (Imagen/PDF):</label>
+            <input type="file" id="documento" name="documento" required>
+
+            <button type="submit" class="submit-btn">Enviar</button>
+        </form>
+
+        <!-- Sección para mostrar la cotización -->
+        <div id="cotizacion" class="hidden">
+            <h3>Cotización Estimada</h3>
+            <p id="mensaje-cotizacion"></p>
+        </div>
+    </section>
+
+    <!-- Sección FAQ -->
+    <section id="faq">
+        <h2>Preguntas Frecuentes (FAQ)</h2>
+        <div class="faq-item">
+            <h3>¿Qué es la prescripción de multas?</h3>
+            <p>La prescripción de multas es un proceso legal mediante el cual puedes eliminar multas de tránsito que ya han cumplido el tiempo límite establecido para su cobro.</p>
+        </div>
+        <div class="faq-item">
+            <h3>¿Qué documentos necesito para el trámite?</h3>
+            <p>Solo necesitas tener la multa a mano y los datos de tu vehículo. Además, podrás subir la multa como archivo en el formulario.</p>
+        </div>
+        <div class="faq-item">
+            <h3>¿Cuánto tiempo toma el proceso?</h3>
+            <p>El tiempo varía según el tipo de multa y los plazos de los Juzgados de Policía Local. Sin embargo, en general, el proceso puede tomar entre 7 y 30 días hábiles.</p>
+        </div>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section id="contacto">
+        <h2>Contáctanos</h2>
+        <p>Si tienes dudas, puedes escribirnos a nuestro correo electrónico: <a href="mailto:info@sinmultas.cl">info@sinmultas.cl</a></p>
+    </section>
+
+    <!-- Footer / Pie de página -->
+    <footer>
+        <p>&copy; 2025 SIN MULTAS. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
