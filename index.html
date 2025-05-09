@@ -108,6 +108,15 @@
       <input type="file" required style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
 <small style="text-align: left; color: #555; font-size: 0.9em;">Adjunta: Certificado de multas del Registro Civil, citación de las multas o certificado de anotaciones vigentes.</small>
       <textarea placeholder="Mensaje adicional (opcional)" rows="4" style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;"></textarea>
+
+      <fieldset style="border: none; text-align: left;">
+        <legend style="font-weight: bold; margin-bottom: 8px;">Servicios</legend>
+        <label><input type="checkbox" name="servicios" value="Pago de multas"> Pago de multas</label><br>
+        <label><input type="checkbox" name="servicios" value="Prescripción de multas"> Prescripción de multas</label><br>
+        <label><input type="checkbox" name="servicios" value="Análisis de multas"> Análisis de multas</label><br>
+        $1<br>
+        <label><input type="checkbox" name="servicios" value="Prescripción Permiso de Circulación"> Prescripción Permiso de Circulación</label>
+      </fieldset>
       <button type="submit" style="background-color: #e95400; color: white; padding: 12px; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;"><i class="fas fa-paper-plane" style="margin-right: 8px;"></i>Enviar</button>
     </form>
     <p id="mensaje-cotizacion" class="hidden"></p>
@@ -129,22 +138,22 @@
 <section id="beneficios" style="text-align:center; padding: 50px 20px; background-color: #f5f5f5;">
   <h2 style="font-size:2em; color:#333; margin-bottom:30px;">¿Por qué elegir SIN MULTAS?</h2>
   <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; max-width: 1100px; margin: 0 auto;">
-    <div style="max-width:250px; background:#fff; padding:20px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.1);">
+    <div style="max-width:250px; background:#fff; padding:20px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
       <i class="fas fa-balance-scale" style="font-size: 2em; color:#e95400;"></i>
       <h4>100% Legal</h4>
       <p>Todo el proceso está respaldado por abogados especialistas en tránsito.</p>
     </div>
-    <div style="max-width:250px; background:#fff; padding:20px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.1);">
+    <div style="max-width:250px; background:#fff; padding:20px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
       <i class="fas fa-user-check" style="font-size: 2em; color:#e95400;"></i>
       <h4>Asesoría Personalizada</h4>
       <p>Te acompañamos en todo el proceso con atención directa vía WhatsApp o correo.</p>
     </div>
-    <div style="max-width:250px; background:#fff; padding:20px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.1);">
+    <div style="max-width:250px; background:#fff; padding:20px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
       <i class="fas fa-clock" style="font-size: 2em; color:#e95400;"></i>
       <h4>Rapidez Garantizada</h4>
       <p>Recibe respuesta en menos de 24 horas desde que subes tu información.</p>
     </div>
-    <div style="max-width:250px; background:#fff; padding:20px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.1);">
+    <div style="max-width:250px; background:#fff; padding:20px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
       <i class="fas fa-thumbs-up" style="font-size: 2em; color:#e95400;"></i>
       <h4>Clientes Satisfechos</h4>
       <p>Más de 1.200 automovilistas ya solucionaron su situación con nosotros.</p>
