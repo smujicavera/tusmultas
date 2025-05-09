@@ -149,8 +149,24 @@
     </div>
   </div>
 </section>
-
-  <section id="contacto">
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const beneficios = document.getElementById("beneficios");
+    beneficios.style.opacity = 0;
+    beneficios.style.transform = "translateY(30px)";
+    beneficios.style.transition = "opacity 1s ease, transform 1s ease";
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          beneficios.style.opacity = 1;
+          beneficios.style.transform = "translateY(0)";
+        }
+      });
+    });
+    observer.observe(beneficios);
+  });
+</script>
+<section id="contacto">
     <h2>Contáctanos</h2>
     <p>Correo: <a href="mailto:info@sinmultas.cl">info@sinmultas.cl</a><br>
     Teléfono: +56 9 1234 5678<br>
@@ -223,5 +239,29 @@
   <a href="#inicio" class="scroll-to-top" title="Volver arriba">
     <i class="fas fa-chevron-up"></i>
   </a>
+  <a href="https://wa.me/56912345678" class="whatsapp-float" target="_blank" title="Escríbenos por WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <style>
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      width: 55px;
+      height: 55px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      z-index: 1000;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .whatsapp-float:hover {
+      background-color: #20ba5a;
+    }
+  </style>
 </body>
 </html>
