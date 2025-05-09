@@ -98,6 +98,27 @@ nav ul li a:hover {
 }
 
 /* Testimonios */
+.testimonial-carousel {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  padding: 20px;
+}
+
+.testimonial-slide {
+  display: none;
+  animation: fade 1s ease-in-out;
+}
+
+.testimonial-slide.active {
+  display: block;
+}
+
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
 #testimonios {
   background: var(--blanco);
   padding: 50px 20px;
