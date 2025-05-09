@@ -132,7 +132,37 @@
     Horario: Lunes a Viernes de 09:00 a 18:00</p>
   </section>
 
-  
+  <section id="testimonios">
+    <h2 style="text-align:center; font-size:2em; color:#333; margin-bottom:10px;">Lo que dicen nuestros clientes</h2>
+    <p style="text-align:center; font-size:1.1em; color:#555; margin-bottom:30px;">La experiencia de nuestros clientes habla por sí sola.</p>
+    <div class="testimonial-carousel">
+      <div class="testimonial-slide active">
+        <blockquote>“Excelente servicio. Me explicaron todo con claridad y en pocos días resolvieron mi situación. ¡Muy confiable!”<br><cite>- Ximena Gaete, Lampa</cite></blockquote>
+      </div>
+      <div class="testimonial-slide">
+        <blockquote>“Me ayudaron a eliminar todas mis multas antiguas. El proceso fue rápido y claro. 100% recomendados.”<br><cite>- Carolina G., Providencia</cite></blockquote>
+      </div>
+      <div class="testimonial-slide">
+        <blockquote>“No tuve que ir al juzgado. Solo subí mis papeles y me olvidé del problema.”<br><cite>- José M., Puente Alto</cite></blockquote>
+      </div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const slides = document.querySelectorAll('.testimonial-slide');
+        let index = 0;
+        function showSlide(i) {
+          slides.forEach((slide, idx) => {
+            slide.style.display = idx === i ? 'block' : 'none';
+          });
+        }
+        showSlide(index);
+        setInterval(() => {
+          index = (index + 1) % slides.length;
+          showSlide(index);
+        }, 5000);
+      });
+    </script>
+  </section>
 
   <footer class="footer">
     <div class="footer-container">
